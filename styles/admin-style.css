@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  max-width: 90% ;
+  min-height: 500px;
+  padding: 20px;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.15);
+}
+.message {
+  color: firebrick;
+  border: 1px solid firebrick;
+  opacity: 0;
+}
+.container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+label {
+  flex: 1;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: left;
+  text-shadow: 1px 1px 4px rgba(0,0,0, 0.15);
+
+}
+input {
+  flex: 2;
+  min-height: 30px;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0, 0.15);
+  transition: 0.15s;
+}
+
+input:focus {
+  box-shadow: 0px 0px 6px 3px rgba(30, 104, 173, 0.15);
+}
+
+
+
+button {
+  padding: 10px 25px;
+
+  background-color: transparent;
+  border: 2px solid lightcoral;
+  color: lightcoral;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 5px 2px  rgba(0,0,0,0.15);
+  transition: 0.15s;
+
+}
+button:hover {
+  background-color: lightsalmon;
+  color: white;
+
+}
+button:active {
+  background-color: rgb(107, 23, 23);
+  box-shadow: 0 0 0 0;
+  transform: translateY(2px);
+}
+
+@media(max-width: 800px) {
+  .container {
+    max-width: 80% ;
+    padding: 20px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.15);
+  }
+  .container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  label {
+    align-self: flex-start;
+  }
+  input {
+    width: 100%;
+  }
+  button {
+    margin: 10px 0px;
+  }
+
+}

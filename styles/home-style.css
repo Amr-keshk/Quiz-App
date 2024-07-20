@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightblue;
+}
+.start-page {
+  width: 55%;
+  min-height: 300px;
+  padding: 20px;
+  margin: 100px auto;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.15);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h1 {
+  
+}
+.login-page {
+  display: none;
+  margin: 50px 0px;
+}
+.inputs {
+  
+}
+.message {
+  height: 30px;
+  color: rgb(237, 14, 14);
+  font-size: 20px;
+  transition: 0.5s;
+}
+.inputs div {
+  margin: 15px auto;
+  max-width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+label {
+
+}
+input {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid rgba(0,0,0,0.15);
+  outline: none;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 20px ;
+  font-weight: bolder;
+  background: transparent;
+  border: 1px solid lightblue;
+  color: lightblue;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 5px 2px  rgba(0,0,0,0.15);
+  transition: 0.15s;
+}
+button:hover {
+  background: lightblue;
+  border: 1px solid lightblue;
+  color: white;
+}
+button:active {
+  box-shadow: 0 0 0 0;
+  transform: translateY(2px);
+}

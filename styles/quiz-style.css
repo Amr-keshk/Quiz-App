@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  max-width: 1300px;
+  height: 100vh;
+  margin: auto;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0, 15%);
+}
+.layer {
+  display: none;
+}
+.layer p {
+  font-size: 50px;
+  color: white;
+  font-weight: 900;
+}
+.show-layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+.start  {
+  border: 1px solid #3cb4e1;
+  color: white;
+  background: #3cb4e1;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+header {
+  height: 150px;
+  background: linear-gradient(45deg, #3cb4e1, #71e4e9);
+  position: relative;
+  overflow: hidden;
+}
+.results-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+  z-index: 1;
+  color: white;
+  position:relative
+}
+.wrong{
+  margin-right: auto;
+}
+span {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+}
+.wrong i, .correct i, .clock i{
+  font-size: 25px;
+}
+span i {
+  margin-right: 5px;
+}
+.arc {
+  position: absolute;
+  height: 500px;
+  width: 1100px;
+  background: linear-gradient(90deg, #7ed1f0, #72d5e8);
+  top: 15px;
+  left: -350px;
+  border-radius: 50%;
+}
+
+section {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  top: -40px;
+  background: white;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0, 15%);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-container {
+
+}
+.questions-number, .answer-option {
+  color: rgba(0,0,0, 25%);
+  font-size: 16px;
+}
+.question {
+  color: rgba(0,0,0, 65%);
+  line-height: 1.35;
+  margin: 20px 0px 30px;
+  font-size: 20px;
+}
+.answer-option {
+  margin-bottom: 20px;
+}
+.option-a, .option-b, .option-c {
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color .2s;
+  margin-left: -10px;
+}
+
+.option-a:hover,
+.option-b:hover,
+.option-c:hover {
+  background: linear-gradient(45deg, #3cb4e1, #71e4e9);
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+button {
+  width: 150px;
+  height: 45px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: 700;
+  margin: 5px;
+  transition: .15s;
+  cursor: pointer;
+}
+.later {
+  border: 1px solid #3cb4e1;
+  color: #3cb4e1;
+  background: transparent;
+}
+.later:hover {
+  border: 1px solid transparent;
+  color: white;
+  background: #3cb4e1 ;
+}
+.send {
+  background: #3cb4e1;
+  border:1px solid transparent;
+  color: white;
+}
+.send:hover {
+  background: white;
+  border:1px solid  #3cb4e1;
+  color:  #3cb4e1;
+}

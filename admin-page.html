@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="styles/admin-style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="message">All fields are required</div>
+    <form action="">
+
+      <div>
+        <label for="input-question">input-question :</label>
+        <input type="text" id="input-question" class="input-question" required>
+      </div>
+      
+      <div>
+        <label for="input-answer-a">input answer a :</label>
+        <input type="text" id="input-answer-a" class="input-answer-a" required>
+      </div>
+      
+      <div>
+        <label for="input-answer-b">input answer b :</label>
+        <input type="text" id="input-answer-b" class="input-answer-b" required>
+      </div>
+  
+      <div>
+        <label for="input-answer-c">input answer c :</label>
+        <input type="text" id="input-answer-c" class="input-answer-c" required>
+      </div>
+  
+      <div>
+        <label for="input-correct">input correct answer</label>
+        <input type="text" id="input-correct" class="input-correct" required>
+      </div>
+  
+      <div>
+        <button type="submit" class="enter-btn">Save Question</button>
+      </div>
+
+      <button class="enter-time">Save Time</button>
+    </form>
+
+
+  </div>
+
+  <script type="module" src="scripts/admin-script.js"></script>
+</body>
+</html>
